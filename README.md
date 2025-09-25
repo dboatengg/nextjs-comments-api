@@ -26,7 +26,7 @@ This is a full-stack project built with **Next.js App Router** to practice my kn
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 ```plaintext
 app/
  ├─ api/
@@ -39,3 +39,23 @@ app/
  ├─ middleware.ts             # Protects routes
 lib/
  └─ data.ts                   # Dummy comments data
+ ```
+ ## Setup
+
+```bash
+# Clone the repo
+git clone https://github.com/your-username/nextjs-comments-api.git
+cd nextjs-comments-api
+
+# Install dependencies
+npm install
+
+# Run the dev server
+npm run dev
+```
+
+## How to Test
+
+You can use Thunder Client, Postman, or curl to test the API.
+
+### 1. 🔑 Login
