@@ -39,5 +39,3 @@ app/
  ├─ middleware.ts             # Protects routes
 lib/
  └─ data.ts                   # Dummy comments data
-
-
