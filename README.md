@@ -10,7 +10,7 @@ This is a full-stack project built with **Next.js App Router** to practice my kn
 
 ---
 
-## 🚀 Features
+## Features
 - List all comments
 - Search comments with query params (`/api/comments?search=hello`)
 - Create, update, and delete comments (requires login)
@@ -58,4 +58,46 @@ npm run dev
 
 You can use Thunder Client, Postman, or curl to test the API.
 
-### 1. 🔑 Login
+### 1. Login
+```
+POST /api/auth/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "password"
+}
+
+```
+### 2. Logout
+```
+POST /api/auth/logout
+```
+### 3. List Comments
+```
+GET /api/comments
+```
+Example with search:
+```
+GET /api/comments?search=hello
+```
+### 4. Create a Comment 
+```
+POST /api/comments
+
+{
+  "text": "My new comment"
+}
+```
+### 5. Update a Comment 
+```
+PUT /api/comments/:id
+
+{
+  "text": "Updated text"
+}
+```
+### 6. Delete a Comment
+```
+DELETE /api/comments/:id
+```
