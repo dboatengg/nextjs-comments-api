@@ -81,23 +81,25 @@ Example with search:
 ```
 GET /api/comments?search=hello
 ```
-### 4. Create a Comment 
+### 4. Create a Comment (Requires login)
 ```
 POST /api/comments
+Content-Type: application/json
 
 {
   "text": "My new comment"
 }
 ```
-### 5. Update a Comment 
+### 5. Update a Comment (Requires login)
 ```
 PUT /api/comments/:id
+Content-Type: application/json
 
 {
   "text": "Updated text"
 }
 ```
-### 6. Delete a Comment
+### 6. Delete a Comment (Requires login)
 ```
 DELETE /api/comments/:id
 ```
