@@ -33,7 +33,7 @@ app/
  │   ├─ comments/
  │   │   ├─ route.ts          # GET, POST (list + create)
  │   │   └─ [id]/route.ts     # PUT, DELETE (update + delete)
- │   ├─ auth/
+ │   ├─ (auth)/
  │   │   ├─ login/route.ts    # Login (sets cookie)
  │   │   └─ logout/route.ts   # Logout (clears cookie)
  ├─ middleware.ts             # Protects routes
@@ -60,7 +60,7 @@ You can use Thunder Client, Postman, or curl to test the API.
 
 ### 1. Login
 ```
-POST /api/auth/login
+POST http://localhost:3000/api/login
 Content-Type: application/json
 
 {
@@ -71,19 +71,19 @@ Content-Type: application/json
 ```
 ### 2. Logout
 ```
-POST /api/auth/logout
+POST http://localhost:3000/api/logout
 ```
 ### 3. List Comments
 ```
-GET /api/comments
+GET http://localhost:3000/api/comments
 ```
 Example with search:
 ```
-GET /api/comments?search=hello
+GET http://localhost:3000/api/comments?search=hello
 ```
 ### 4. Create a Comment (Requires login)
 ```
-POST /api/comments
+POST http://localhost:3000/api/comments
 Content-Type: application/json
 
 {
@@ -92,7 +92,7 @@ Content-Type: application/json
 ```
 ### 5. Update a Comment (Requires login)
 ```
-PUT /api/comments/:id
+PUT http://localhost:3000/api/comments/:id
 Content-Type: application/json
 
 {
@@ -101,5 +101,5 @@ Content-Type: application/json
 ```
 ### 6. Delete a Comment (Requires login)
 ```
-DELETE /api/comments/:id
+DELETE http://localhost:3000/api/comments/:id
 ```

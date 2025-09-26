@@ -4,6 +4,6 @@ export type Comment = {
 };
 
 export const comments: Comment[] = [
-  { id: 1, text: "Next.js is awesome!" },
+  { id: 1, text: "Hello, Next.js is awesome!" },
   { id: 2, text: "Route Handlers make it full-stack." },
 ];
